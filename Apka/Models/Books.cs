@@ -5,10 +5,10 @@ namespace MvcMovie.Models
     public class Books
     {
         public int Id { get; set; }
-        public string Title { get; set; }
+        public string Tytuł { get; set; }
         [DataType(DataType.Date)]
-        public DateTime ReleaseDate { get; set; }
-        public string Company { get; set; }
-        public decimal Author { get; set; }
+        public DateTime DataWydania { get; set; }
+        public string Wydawnictwo { get; set; }
+        public string Autor { get; set; }
     }
 }

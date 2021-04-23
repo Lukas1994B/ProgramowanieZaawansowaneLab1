@@ -5,10 +5,10 @@ namespace MvcMovie.Models
     public class Movie
     {
         public int Id { get; set; }
-        public string Title { get; set; }
+        public string Tytuł { get; set; }
         [DataType(DataType.Date)]
-        public DateTime ReleaseDate { get; set; }
-        public string Genre { get; set; }
-        public decimal Price { get; set; }
+        public DateTime DataWydania { get; set; }
+        public string Reżyser { get; set; }
+        public int LiczbaOskarów { get; set; }
     }
 }

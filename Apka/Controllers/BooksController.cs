@@ -54,7 +54,7 @@ namespace Apka.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Company,Author")] Books books)
+        public async Task<IActionResult> Create([Bind("Id,Tytuł,DataWydania,Wydawnictwo,Autor")] Books books)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace Apka.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Company,Author")] Books books)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Tytuł,DataWydania,Wydawnictwo,Autor")] Books books)
         {
             if (id != books.Id)
             {
